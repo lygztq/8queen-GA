@@ -70,7 +70,7 @@ private:
             for (int j = i; j < boardSize; ++j) 
                 if (board[j] != board[i] && \
                     board[j] != board[i] + j - i && \
-                    board[j] != board[i] - i + j)
+                    board[j] != board[i] + i - j)
                     fitnessValue += 1;
         return fitnessValue;
     }
